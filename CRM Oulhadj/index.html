@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Second Seance</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="todo.css"> -->
+</head>
+<body ng-app="clientApp">
+  <div ng-controller="clientCtrl">
+    <div class="row">
+      <div class="col-sm-5 col-md-12">
+      </div>
+      <div class="col-sm-5 col-md-12">
+    <table class="table table-bordered">
+   <tr>
+       <th>Nom</th>
+       <th>Prenom</th>
+       <th>Mail</th>
+   </tr>
+
+   <tr ng-repeat="client in clients">
+       <td >{{client.nom}}</td>
+       <td>{{client.prenom}}</td>
+       <td>{{client.mail}}</td>
+       <td>
+         <button ng-click="supprimerClient(client)" class="btn btn-default">Supprimer ce client</button>
+         <button ng-click="afficherDetails(client)" class="btn btn-default">Voir les interactions</button>
+       </td>
+   </tr>
+</table>
+</div>
+    <!-- <ul>
+      <li ng-repeat="client in clients">
+        {{client.nom}}
+      </li>
+    </ul> -->
+    <br/>
+    <br/>
+    <div class="col-sm-2 col-md-1"></div>
+    <div class="col-sm-5 col-md-4">
+      <div class="alert alert-success alert-dismissable" ng-if="client_added">
+        <button class="close" data-dismiss="alert" aria-label="close" ng-click="closeTab()">×</button>
+        <strong>Votre client a bien été rajouté</strong>
+      </div>
+      <h2>Ajout d'un client </h2>
+    <form ng-submit="ajouterClient(nom, prenom, mail)">
+      <div class="form-group">
+      <label>Nom:</label>
+      <input type="texte" class="form-control" placeholder="Entrer le nom" ng-model="nom">
+    </div>
+    <div class="form-group">
+      <label>Prenom:</label>
+      <input type="text" class="form-control" placeholder="Entrer le prenom" ng-model="prenom">
+    </div>
+    <div class="form-group">
+      <label>Mail:</label>
+      <input type="email" class="form-control" placeholder="Entrer le mail" ng-model="mail">
+    </div>
+    <input type="submit" value="Ajouter client" class="btn btn-default">
+    </form>
+  </div>
+  <div class="col-sm-5 col-md-6" ng-if="client_checked">
+    <h4>Voici toutes les interactions du client {{client_details.prenom}} {{client_details.nom}} pour le contacter veuillez lui envoyez un mail à l'adresse <strong>{{client_details.mail}}</strong>.</h4>
+    <ul class="list-group">
+      <li ng-repeat="interaction in interactions" class="list-group-item">
+        {{interaction.contenu}}
+        <button ng-click="supprimerInteraction(interaction)" class="btn btn-default" style="float:right;">Supprimer cette interaction</button>
+      </li>
+    </ul>
+    <button ng-click="interaction_added = true" class="btn btn-default">Creer une nouvelle interaction</button>
+    <br/><br/>
+      <form ng-submit="creerInteraction(client_details, interaction_created)" ng-if="interaction_added">
+        <div class="form-group">
+        <label>Nom:</label>
+        <input type="text" class="form-control" placeholder="Tapez le contenu de votre intéraction" ng-model="interaction_created">
+        </div>
+      <input type="submit" value="Ajouter l'intéraction" class="btn btn-default">
+      </form>
+  </div>
+  <div class="col-sm-1 col-md-1"></div>
+  </div>
+  <script src="app.js"></script>
+  <script src="factories/clientFactory.js"></script>
+  <script src="controllers/clientCtrl.js"></script>
+</body>
+</html>
