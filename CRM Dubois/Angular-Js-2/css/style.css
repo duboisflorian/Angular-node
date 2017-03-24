@@ -1,0 +1,713 @@
+/* D�claration */
+/* Utilisation */
+
+/* Tabs panel */
+.tabbable-panel {
+  border:1px solid #eee;
+  padding: 10px;
+}
+
+.textcolor{
+    color: #696969;
+}
+
+/* Default mode */
+.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 4px solid #f3565d;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}
+
+/* Below tabs mode */
+
+.tabbable-line.tabs-below > .nav-tabs > li {
+  border-top: 4px solid transparent;
+}
+.tabbable-line.tabs-below > .nav-tabs > li > a {
+  margin-top: 0;
+}
+.tabbable-line.tabs-below > .nav-tabs > li:hover {
+  border-bottom: 0;
+  border-top: 4px solid #fbcdcf;
+}
+.tabbable-line.tabs-below > .nav-tabs > li.active {
+  margin-bottom: -2px;
+  border-bottom: 0;
+  border-top: 4px solid #f3565d;
+}
+.tabbable-line.tabs-below > .tab-content {
+  margin-top: -10px;
+  border-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+.panel-table .panel-body{
+
+  padding:0;
+}
+
+.panel-table .panel-body .table-bordered{
+  border-style: none;
+  margin:0;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:first-of-type {
+    text-align:center;
+
+    width: 10%;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type {
+
+  border-right: 0px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type {
+
+  border-left: 0px;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td{
+
+  border-bottom: 0px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr:first-of-type > th{
+
+  border-top: 0px;
+}
+
+.panel-table .panel-footer .pagination{
+  margin:0;
+}
+
+/*
+used to vertically center elements, may need modification if you're not using default sizes.
+*/
+.panel-table .panel-footer .col{
+ line-height: 34px;
+ height: 30%;
+}
+
+.panel-table .panel-heading .col h3{
+ line-height: 30px;
+ height: 30%;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr > td{
+    color:black;
+  line-height: 34px;
+}
+
+.logo {
+  width: 40px ;
+  height: 50px;
+}
+.portrait {
+  width: 60px ;
+  height: 60px;
+}
+.incone_menu {
+  width: 30px ;
+  height: 30px;
+}
+#form-recherche {
+  margin: 10px auto 10px auto;
+  width: 90%;
+}
+.text-logo,
+.text-logo:hover,
+.text-logo:active {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Verdana;
+  font-weight: bold;
+}
+.nom {
+  margin-left: 1em;
+  font-size: 20px;
+}
+.menu {
+  background: rgba(0, 0, 0, 0.9);
+}
+.list-ami {
+  display: block;
+  padding-left: 0;
+}
+.list-ami h1 {
+  margin-top: 0px;
+  margin-bottom: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.info-user {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: beige;
+}
+.info-user h1 {
+  font-size: 50px;
+}
+.info-user ul {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Menu nav */
+.masthead-nav > li{
+    cursor: pointer;
+}
+.nav-button {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.nav-button .selected {
+  background: rgba(255, 255, 255, 0.5);
+}
+.nav-button li {
+  float: left;
+  width: 50%;
+  border-left: 1px solid black;
+}
+.nav-button li span {
+  display: block;
+  float: left;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  color: #DCDCDC;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+.nav-ajouter {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-top: 1px;
+}
+.nav-ajouter a {
+  display: block;
+  float: left;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  color: #DCDCDC;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-ajouter a span {
+  font-size: 24px;
+  color: black;
+}
+.nav-conteur {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-top: 1px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+}
+.nav-conteur span {
+  font-size: 34px;
+  color: black;
+}
+.presentation {
+  color: antiquewhite;
+  text-align: center;
+  margin-top: 200px;
+}
+.nav-list-nom {
+  text-align: center;
+}
+.core {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 30px auto 65px auto;
+  width: 100%;
+}
+.core_co_in {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 10% auto 355px auto;
+  width: 330px;
+  height: 400px;
+}
+.core_co_in p {
+  color: antiquewhite;
+  margin-left: 5px;
+}
+.core_co_in a {
+  width: 100%;
+  text-align: center;
+}
+.core_co_in form {
+  max-width: 330px;
+  margin: 30px;
+}
+.core_co_in form input,
+.core_co_in form button {
+  margin-top: 10px ;
+}
+.form_co {
+  padding-top: 70px;
+  padding-bottom: 65px;
+}
+.choix-theme {
+  text-align: center;
+  margin: 20px auto 20px auto;
+}
+.choix-theme h1 {
+  color: beige;
+}
+.jouer {
+  text-align: center;
+}
+.jouer h1 {
+  color: beige;
+}
+.jouer #countdown {
+  font-size: 24px;
+  color: beige;
+  margin: 10px auto 10px auto;
+}
+.jouer #gauche {
+  float: left;
+  margin-left: 50px;
+}
+.jouer #droite {
+  float: right;
+  margin-right: 50px;
+}
+.jouer form #form-recherche {
+  margin-top: 400px;
+  width: 200px;
+}
+.profile {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.profile h1,
+.profile h2 {
+  color: beige;
+}
+.profile #modif-photo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.profile .modif-info,
+.profile .favori,
+.profile .stat {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 350px;
+}
+.profile .modif-info p,
+.profile .favori p,
+.profile .stat p {
+  margin: 10px auto 10px auto;
+  font-family: Onyx;
+  font-size: 34px;
+}
+.image-theme {
+  margin: 5px 5px 5px 5px;
+  width: 250px ;
+  height: 200px;
+}
+.theme {
+  width: 50%;
+  display: inline;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #595757;
+}
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  height: 710px;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.nav-sidebar {
+  margin-right: -20px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar li {
+  padding: 5px 20px 5px 20px;
+}
+.nav-sidebar li span {
+  font-size: 20px;
+  color: black;
+  margin-left: 10px;
+}
+.nav-sidebar .active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.nav-sidebar > li:hover {
+  background-color: lightgray;
+}
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding-left: 20px;
+  color: white;
+  font-family: "Proxima Nova Semibold";
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  clear: both;
+  margin-top: -32px;
+  height: 40px;
+}
+.bloc{
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgba(245, 245, 245, 0.8);
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+/* Styles Modal*/
+body {
+    color: #727272;
+}
+
+.foodlistmodal-container{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+    overflow: hidden;
+    font-family: roboto;}
+
+
+/*  foodchef tab */
+div.foodchef-tab-container{
+ -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+}
+div.foodchef-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.foodchef-tab-menu div.list-group{
+  margin-bottom: 0;
+}
+div.foodchef-tab-menu div.list-group>a{
+  margin-bottom: 0;
+}
+div.foodchef-tab-menu div.list-group>a .fa,
+div.foodchef-tab-menu div.list-group>a .fa {
+  color: #7C4DFF;
+}
+div.foodchef-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.foodchef-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.foodchef-tab-menu div.list-group>a.active,
+div.foodchef-tab-menu div.list-group>a.active .fa,
+div.foodchef-tab-menu div.list-group>a.active .fa{
+  background-color: #7C4DFF;
+  color: #ffffff;
+  border-color: #7C4DFF;
+}
+div.foodchef-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #7C4DFF;
+}
+
+div.foodchef-tab-content{
+  background-color: #ffffff;
+ padding: 0 10px;
+}
+
+div.foodchef-tab div.foodchef-tab-content:not(.active){
+  display: none;
+}
+.fa:before {
+    font-size: 24px;
+}
+
+.foodchef-tab-container .list-group-item {
+    padding: 10px 5px;
+    border-radius:0px;
+}
+.foodchef-tab{ background-color: #f5f5f5;
+float:left;
+width:100%;
+padding: 10px;
+box-sizing:border-box;
+}
+.foodchef-tab .type-food{float: left;
+    width: 100%;
+    padding: 4px 0;}
+.foodchef-tab .type-food p {
+   margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #7C4DFF;
+    text-align: left;
+    font-weight: 600;
+}
+.foodchef-tab .type-food p::before, .foodchef-tab .type-food p::after {
+    content: "";
+    padding: 0 5px;
+    margin: 0 10px;
+    border-bottom: 1px solid;
+    position: relative;
+    bottom: 9px;
+}
+
+.foodchef-tab-content article {
+    margin-bottom: 30px;
+    position: relative;
+    float:left;
+    width: 45%;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid #7C4DFF;
+    box-sizing:border-box;
+}
+ .menu-box-image {
+    width: 88px;
+    height: 88px;
+    border-radius: 100%;
+    overflow: hidden;
+     margin: 0 auto;
+    position: relative;
+     border: 1px dashed #651FFF;
+    padding: 3px
+}
+
+ .entry-title {
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    overflow: hidden;
+    margin-bottom: 0;
+    line-height: 24px;
+    font-weight: bold;
+}
+.entry-title a {
+    color: #393939;
+   font-weight: 400;
+    font-size: 16px;
+}
+.agent-box-image-inner img{border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;}
+.chef-list  .entry-content {
+padding: 10px 0;
+text-align: center;
+}
+ .menu-description {
+    font-size: 15px;
+    color: #72777b;
+    letter-spacing: 0.5px;
+}
+@media (min-width: 768px) {
+   #menu-filter .modal-dialog {
+        width: 700px;
+        margin: 30px auto;
+        left: 0;
+    }
+
+}
+@media (max-width: 767px) {
+    #menu-filter .modal-body {
+        padding: 10px;
+    }
+}
+.itemlistpopup .col-sm-12{padding:0;}
+.itemlistpopup .single-item {
+    position: relative;
+   padding: 15px;
+    background: #ffffff;
+    overflow: hidden;
+    -webkit-box-shadow: 0 3px 0px 0px #7C4DFF;
+    -moz-box-shadow: 0 3px 0px 0px #7C4DFF;
+    box-shadow: 0 3px 0px 0px #7C4DFF;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+   margin: 10px 0;
+
+}
+.itemlistpopup .single-item .item-image {
+    position: absolute;
+}
+.itemlistpopup .single-item .item-image img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0 4px 4px #ccc;
+    -moz-box-shadow: 0 4px 4px #ccc;
+    box-shadow: 0 4px 4px #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+        max-width: 100%;
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+}
+
+
+.itemlistpopup .item-info {
+  padding: 5px 0;
+}
+.single-item  .item-quote,
+.single-item  .item-info {
+  margin-left: 105px;
+}
+.single-item .item-info .via {
+    font-weight: 400;
+    padding-right: 8px;
+    font-size: 16px;
+    color:#393939;
+}
+
+.single-item .item-info .rate {
+   background: #333 none repeat scroll 0 0;
+    border-radius: 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 21px 0 5px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    z-index: 2;
+}
+
+.single-item .item-info .rate .fa.fa-star {
+    color: #B388FF;
+    font-size: 13px;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+}
+.single-item .item-info .via .circle-box {
+    font-size: 12px;
+    position: relative;
+    overflow:hidden;
+    vertical-align: text-bottom;
+        padding: 0 5px;
+}
+.fa-circle.Veg {
+    color: #295f05;
+
+}
+.fa-circle.NonVeg {
+    color: #ff0000;
+
+}
+.fa-circle{font-size: 9px;
+    background: #fff;
+    padding: 0 2px 1px;
+    border: 1px solid;}
+.fa-circle:before{
+    font-size:9px;
+}
+.item-price .item-taste-content{    background-color: #dcdcdc;
+    border-radius: 0;
+    color: #403141;
+    display: inline-block;
+    font-size: 11px;
+    padding: 0 10px 2px;
+    margin: 10px 0 15px 43px;
+}
+.item-price .pull-left {
+    color: #7C4DFF;
+    margin: 15px 0;
+}
+.item-price .pull-left .fa-eur {
+    color: #7C4DFF;
+    margin: 0 5px 0 20px;
+    position: relative;
+}
+.onglet{
+    cursor: pointer;
+}
+
+/* Carousel */
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+
+ /* Formulaire reservation */
+
+.form-resa{
+    border:0px;
+}

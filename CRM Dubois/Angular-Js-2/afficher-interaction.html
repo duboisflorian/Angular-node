@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="modal fade small-popup in" id="menu-filter" role="dialog" style="display: block; padding-top: 10%;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Intéraction <button type="button" class="close" data-dismiss="modal" ng-click="closeint()">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="foodlistmodal-container">
+                            <div class="option-holder">
+                                <div class="foodchef-tab-container">
+                                  <table class="table table-striped table-bordered table-list" style="color:darkslategrey;background-color:white;">
+                                    <thead>
+                                      <tr>
+                                      <th>Descriptif</th>
+                                      <th>Date</th>
+                                      <th>Supprimer</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr ng-repeat="int in interactioninfo">
+                                        <th>{{int.action}}</th>
+                                        <th>{{int.date}}</th>
+                                        <th><a class="btn btn-danger"  ng-click="deleteint(int.id)"><em class="fa fa-trash"></em></a></th>
+                                      </tr>
+                                  </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

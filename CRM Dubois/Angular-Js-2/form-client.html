@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="modal fade small-popup in" id="menu-filter" role="dialog" style="display: block; padding-top: 10%;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            Création d'un client <button type="button" class="close" data-dismiss="modal" ng-click="closeformclient()">×</button>
+          </div>
+          <div class="modal-body">
+            <div class="foodlistmodal-container">
+              <div class="option-holder">
+                <div class="foodchef-tab-container">
+                  <form ng-submit="addclient(name,phone,mail)"  style="width:100%;">
+                    <label for="inputname" class="sr-only">Nom</label>
+                    <input style="display:inline;" id="inputname" ng-model="name" class="form-control" placeholder="Nom" required="" type="text">
+                    <br />
+                    <label for="inputtel" class="sr-only">Telephone</label>
+                    <input style="display:inline;" id="inputtel" ng-model="phone" class="form-control" placeholder="+33" required="" type="text">
+                    <br />
+                    <label for="inputmail" class="sr-only">Email</label>
+                    <input style="display:inline;" id="inputmail" ng-model="mail" class="form-control" placeholder="****@****.com" required="" type="email">
+                    <br />
+                    <button class="btn btn-info" type="submit">Créer</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/Cover Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+	<link href="css/Cover Template for Bootstrap_files/cover.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body ng-app="clientApp">
+
+	<div class="cover-container" style="height:10%">
+		<div class="masthead clearfix">
+			<div class="inner">
+				<h3 class="masthead-brand">Rest-In</h3>
+				<nav>
+					<ul class="nav masthead-nav" *ngIf="us!=0">
+						<li><a>Accueil</a></li>
+					</ul>
+
+				</nav>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container-fluid"style="color:black;font-family:'Comic Sans MS';">
+
+		<div ng-controller="clientCrl">
+
+			<afficher-interaction ng-if="afficherIntatt==true" info="interaction">
+			</afficher-interaction>
+
+			<form-interaction ng-if="afficherformatt==true">
+			</form-interaction>
+
+			<form-client ng-if="afficherformclientatt==true">
+			</form-client>
+
+
+			<table class="table table-striped table-bordered table-list" style="color:darkslategrey;background-color:white;">
+				<thead>
+					<th>Nom</th>
+					<th>tel</th>
+					<th>mail</th>
+					<th>Afficher Intéraction</th>
+					<th>Ajouter Intéraction</th>
+					<th>Supprimer</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="client in client.data">
+					<td   ng-dblclick="test()">{{client.name}}</td>
+					<td>{{client.phone}}</td>
+					<td>{{client.mail}}</td>
+					<td><a class="btn btn-info" ng-click="afficherint(client.id)"><em class="fa fa-calendar"></em></a></td>
+					<td><a class="btn btn-info" ng-click="afficherform(client.id)"><em class="fa fa-pencil"></em></a></td>
+					<td><a class="btn btn-danger"  ng-click="deleteclient(client.id)"><em class="fa fa-trash"></em></a></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<form ng-submit="afficherformclient()"  style="width:25%;">
+			<button class="btn btn-info" type="submit">Créer client</button>
+		</form>
+
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script src="https://code.angularjs.org//1.6.3/angular-sanitize.min.js"></script>
+<script src="app.js"></script>
+<script src="factories/clientFactory.js"></script>
+<script src="factories/clientinteractionFactory.js"></script>
+<script src="controllers/clientCtrl.js"></script>
+
+</body>
+</html>

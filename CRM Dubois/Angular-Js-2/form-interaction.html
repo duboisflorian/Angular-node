@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="modal fade small-popup in" id="menu-filter" role="dialog" style="display: block; padding-top: 10%;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            Intéraction <button type="button" class="close" data-dismiss="modal" ng-click="closeform()">×</button>
+          </div>
+          <div class="modal-body">
+            <div class="foodlistmodal-container">
+              <div class="option-holder">
+                <div class="foodchef-tab-container">
+                  <form ng-submit="addint(action)">
+                    <label for="inputname" class="sr-only">Action</label>
+                    <textarea class="form-control"  style="display:inline;" ng-model="action" rows="3"></textarea>
+                    <br />
+                    <button class="btn btn-info" type="submit">Créer</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
